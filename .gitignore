@@ -14,3 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+.sass-cache/
+public/assets/
+public/uploads/
+config/database.yml
+config/oauth.yml
