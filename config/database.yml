@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: edem-design-shop_development
+  pool: 5
+  username: postgres
+  password: 860827
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: edem-design-shop_test
+  pool: 5
+  username: postgres
+  password: 860827
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: edem-design-shop_development
+  pool: 5
+  username: postgres
+  password: 860827

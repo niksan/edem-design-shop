@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category_id: 1
+  name: MyString
+  description: MyText
+  price: 9.99
+  ancestry: MyString
+  slug: MyString
+  disabled: false
+  position: 1
+  show_on_main_page: false
+
+two:
+  category_id: 1
+  name: MyString
+  description: MyText
+  price: 9.99
+  ancestry: MyString
+  slug: MyString
+  disabled: false
+  position: 1
+  show_on_main_page: false
