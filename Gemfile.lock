@@ -38,11 +38,19 @@ GEM
     arel (4.0.1)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    bootstrap-sass (3.1.0.0)
+      sass (~> 3.2)
     builder (3.1.4)
+    cancan (1.6.10)
     capistrano (3.1.0)
       i18n
       rake (>= 10.0.0)
       sshkit (~> 1.3)
+    carrierwave (0.9.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+    chunky_png (1.2.9)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -51,6 +59,12 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     columnize (0.3.6)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (1.1.3)
+      compass (>= 0.12.2)
     daemons (1.1.9)
     debugger (1.6.5)
       columnize (>= 0.3.1)
@@ -58,9 +72,17 @@ GEM
       debugger-ruby_core_source (~> 1.3.1)
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.3.1)
+    devise (3.2.2)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
+    fssm (0.2.10)
+    gritter (1.1.0)
     haml (4.0.5)
       tilt
     haml-rails (0.5.3)
@@ -86,11 +108,14 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_magick (3.7.0)
+      subexec (~> 0.2.1)
     minitest (4.7.5)
     multi_json (1.8.4)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
+    orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -135,6 +160,7 @@ GEM
       net-ssh
       term-ansicolor
     state_machine (1.2.0)
+    subexec (0.2.3)
     term-ansicolor (1.2.2)
       tins (~> 0.8)
     thin (1.6.1)
@@ -159,6 +185,8 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -166,14 +194,21 @@ PLATFORMS
 DEPENDENCIES
   ancestry
   bcrypt-ruby (~> 3.1.2)
+  bootstrap-sass (~> 3.1.0)
+  cancan
   capistrano
+  carrierwave
   coffee-rails (~> 4.0.0)
+  compass-rails
   debugger
+  devise
   friendly_id!
+  gritter (= 1.1.0)
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
   letter_opener
+  mini_magick
   pg
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
