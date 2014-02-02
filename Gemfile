@@ -23,6 +23,7 @@ gem 'rails_admin'
 gem 'rails_admin_nestable'
 gem 'ckeditor'
 gem 'paper_trail'
+gem 'russian'
 
 group :doc do
   gem 'sdoc', require: false
