@@ -1,0 +1,3 @@
+%ul#products
+  - products.each do |product|
+    %li= render '/products/product', { product: product }

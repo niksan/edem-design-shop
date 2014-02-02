@@ -1,5 +1,2 @@
 %h1= @category.name
-%ul#products
-  - @category.products.each do |product|
-    %li
-      = product.name
+= render '/products/list', { products: @category.products }
