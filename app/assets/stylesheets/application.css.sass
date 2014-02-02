@@ -1,0 +1,143 @@
+@import "bootstrap"
+@import 'compass/reset'
+
+body
+  background: #ecf9e7
+  font-size: 10pt
+  font-family: 'Tahoma'
+  a
+    color: #3a6708
+    font-size: 10pt
+    text-decoration: underline
+    &:hover
+      color: #7bab46
+.clear
+  clear: both
+.pretty_border
+  border: solid 5px #B1BF9D
+  margin: 10px
+
+#wrapper
+  width: 1200px
+  margin: 0px auto 0px auto
+  #header
+    margin: 0px 0px 0px 70px
+    padding: 0px 90px 0px 0px
+    #logo
+      display: block
+      float: left
+    #icons
+      margin: 50px 0px 0px 85px
+      float: left
+      .contacts
+        display: block
+        float: left
+        margin: 0px 50px 0px 0px
+      .sitemap
+        display: block
+        float: left
+        margin: 0px 50px 0px 0px
+      .favorite
+        display: block
+        float: left
+    #contacts
+      float: right
+      color: #3a6708
+      font-family: 'Arial'
+      margin: 45px 0px 0px 0px
+      .phone
+        font-family: 'TimesNewRoman'
+        display: block
+        font-size: 16pt
+    #main_menu
+      float: left
+      margin: 40px 0px 0px 65px
+      line-height: 24px
+      a
+        padding: 2px 17px 2px 17px
+        font-family: 'Georgia'
+        font-size: 14.5px
+        border-right: solid 1px #b3d09a
+      a:last-of-type
+        border: none
+  #middle_part
+    padding-left: 85px
+    #sidebar
+      display: inline-block
+      width: 200px
+    #content
+      display: inline-block
+      width: 835px
+      padding: 0px 0px 0px 0px
+      margin: 30px 0px 0px 0px
+      min-height: 200px
+      strong
+        font-weight: bold
+      .flowers
+        td
+          width: 50%
+          text-align: center
+      h2
+        text-align: center
+        margin: 15px 5px 0px 0px
+        padding: 10px 0px 0px 0px
+        display: block
+        font-weight: bold
+        font-size: 16px
+        text-align: center
+        margin: 0px 0px 5px 0px
+        color: #336600
+      h3
+        text-align: center
+        margin: 15px 5px 0px 0px
+        padding: 10px 0px 0px 0px
+        display: inline-block
+        font-weight: bold
+        font-size: 14px
+        text-align: center
+        margin: 0px 0px 5px 0px
+        color: #336600
+      ul
+        margin: 10px 5px 0px 15px
+        li
+          list-style-type: circle
+          margin: 0px 0px 5px 10px
+          p
+            margin: 10px 0px
+          ul li
+            list-style-type: disc
+      a.parent_article
+        font-size: 20px
+        margin: 0px 0px 15px 0px
+        display: block
+      h1
+        font-family: 'Georgia'
+        font-size: 24px
+        font-weight: normal
+        color: #3A6708
+        border-bottom: dotted 1px #6D8D42
+        padding: 0px 0px 10px 0px
+        margin: 0px 0px 10px 0px
+      p
+        margin: 0px 0px 10px 0px
+        line-height: 16px
+        white-space: normal
+        text-indent: 20px
+      p.without_indent
+        text-indent: 0px
+  #footer
+    margin-top: 50px
+    background: image_url('footer/bg.jpg') no-repeat right bottom
+    height: 110px
+    .contacts
+      margin: 0px 0px 0px 300px
+      span.phone
+        display: block
+        margin: 0px 0px 5px 0px
+        font-family: 'TimesNewRoman'
+        font-size: 22px
+        color: #3A6708
+      span.address
+        display: block
+      a
+        color: #CE5322

@@ -1,0 +1,43 @@
+!!!
+%html
+  %head
+    %title= page_title
+    %meta{ content: 'text/html; charset=UTF-8', :'http-equiv' => 'Content-Type' }
+    %link{ rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  %body
+    = gflash
+    #wrapper
+      #header
+        = link_to root_path, id: 'logo' do
+          = image_tag 'header/logo.jpg', alt: 'Ландшафтная студия - Эдем'
+        #icons
+          = link_to 'http://edem-design.ru/articles/21-kontakty#second_menu', class: 'contacts' do
+            = image_tag 'header/mail_icon.gif', alt: 'Контакты'
+          = link_to image_tag('header/map_icon.gif', alt: 'Карта сайта'), '', class: 'sitemap'
+          = link_to image_tag('header/fav_icon.gif', alt: 'В избранное'), '', class: 'favorite'
+        #contacts
+          %span.phone
+            +7(473)2-32-36-52
+            %br
+            +7(473)2-92-00-76
+          г. Воронеж, ул. Хользунова, 4, оф. 1, этаж 4
+        #main_menu= render 'shared/main_menu'
+      %object{ data: asset_path('header.swf'), height: '216', id: 'header_flash', type: 'application/x-shockwave-flash', width: '1200' }
+        %param{ name: 'movie', value: asset_path('header.swf') }
+        %param{ name: 'wmode', value: 'transparent'}
+        %param{ name: 'quality', value: 'high' }
+      #middle_part
+        #sidebar
+          %ul.nav.nav-pills.nav-stacked
+            %li= link_to 'test', ''
+        #content
+          = yield
+        .clear
+        #footer
+          .contacts
+            %span.phone +7(473)292-00-76
+            %span.address г. Воронеж, ул. Хользунова, 4, оф. 1, этаж 4
+            = link_to raw('схема проезда &rarr;'), 'http://edem-design.ru/articles/21-kontakty#second_menu'
