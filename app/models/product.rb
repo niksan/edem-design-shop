@@ -14,4 +14,9 @@ class Product < ActiveRecord::Base
     photos.first.try(:image) || false
   end
 
+  def destroy
+    update_attributes(disabled: true)
+  end
+  alias destroy! destroy
+
 end

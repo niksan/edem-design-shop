@@ -19,6 +19,9 @@ gem 'cancan'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'gritter', '1.1.0'
+gem 'rails_admin'
+gem 'rails_admin_nestable'
+gem 'ckeditor'
 
 group :doc do
   gem 'sdoc', require: false
