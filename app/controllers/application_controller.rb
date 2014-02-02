@@ -1,11 +1,15 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_filter :initialize_cart, :init_meta_tags
+  before_filter :initialize_cart, :init_meta_tags, :init_variables
   
   private
     
     def initialize_cart
       @cart = session[:cart] ||= Cart.new
+    end
+
+    def init_variables
+      @categories = Category.all
     end
 
     def init_meta_tags

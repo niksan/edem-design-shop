@@ -5,10 +5,10 @@ class Ability
     user ||= User.new
     if user.role? :admin
       can :manage, :all
+      cannot :destroy, Order
+      cannot :destroy, Order::Item
     else
       can :read, :all
     end
-    cannot :destroy, Order
-    cannot :destroy, Order::Item
   end
 end
