@@ -19,7 +19,7 @@ gem 'cancan'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'gritter', '1.1.0'
-gem 'rails_admin', path: '/home/niksan/htdocs/rails_admin'
+gem 'rails_admin'
 gem 'rails_admin_nestable'
 gem 'ckeditor'
 gem 'paper_trail'
@@ -30,6 +30,9 @@ group :doc do
 end
 
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
   gem 'letter_opener'
   gem 'thin'
   gem 'capistrano', group: :development
