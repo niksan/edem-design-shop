@@ -17,8 +17,6 @@ RailsAdmin.config do |config|
 
   config.main_app_name = ['Edem Design Shop', 'Admin']
   config.current_user_method { current_user } # auto-generated
-  config.audit_with :paper_trail, 'User'
-
   config.excluded_models = ['Order::Item', 'Role']
 
   [:email, :title].each do |method|
