@@ -14,10 +14,9 @@
         = link_to root_path, id: 'logo' do
           = image_tag 'header/logo.jpg', alt: 'Ландшафтная студия - Эдем'
         #icons
-          = link_to 'http://edem-design.ru/articles/21-kontakty#second_menu', class: 'contacts' do
-            = image_tag 'header/mail_icon.gif', alt: 'Контакты'
-          = link_to image_tag('header/map_icon.gif', alt: 'Карта сайта'), '', class: 'sitemap'
-          = link_to image_tag('header/fav_icon.gif', alt: 'В избранное'), '', class: 'favorite'
+          #cart
+            %h4 Ваша корзина: 
+            = render partial: 'shared/cart_content', locals: { cart: @cart }
         #contacts
           %span.phone
             +7(473)2-32-36-52
