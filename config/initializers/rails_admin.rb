@@ -17,7 +17,9 @@ RailsAdmin.config do |config|
 
   config.main_app_name = ['Edem Design Shop', 'Admin']
   config.current_user_method { current_user } # auto-generated
-  config.excluded_models = ['Order::Item', 'Role']
+  config.audit_with :history, 'User'
+
+  config.excluded_models = ['Order::Item', 'Role', 'Ckeditor::Asset', 'Ckeditor::AttachmentFile', 'Ckeditor::Picture']
 
   [:email, :title].each do |method|
     config.label_methods << method

@@ -1,27 +1,9 @@
 GIT
   remote: git://github.com/norman/friendly_id.git
-  revision: f6fd61848039fa4d4ab8668568f40b85eb0afcf3
+  revision: ba0f1522691f8985311dbd6a8d277369ec24d7c7
   specs:
-    friendly_id (5.0.2)
+    friendly_id (5.0.3)
       activerecord (>= 4.0.0)
-
-PATH
-  remote: /home/niksan/htdocs/rails_admin
-  specs:
-    rails_admin (0.6.0)
-      builder (~> 3.1)
-      coffee-rails (~> 4.0)
-      font-awesome-rails (>= 3.0)
-      haml (~> 4.0)
-      jquery-rails (~> 3.0)
-      jquery-ui-rails (~> 4.0)
-      kaminari (~> 0.14)
-      nested_form (~> 0.3)
-      rack-pjax (~> 0.7)
-      rails (~> 4.0)
-      remotipart (~> 1.0)
-      safe_yaml (~> 1.0)
-      sass-rails (~> 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -53,12 +35,18 @@ GEM
     addressable (2.3.5)
     ancestry (2.0.0)
       activerecord (>= 3.0.0)
-    arel (4.0.1)
+    arel (4.0.2)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
-    bootstrap-sass (3.1.0.0)
+    better_errors (1.1.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.1.0.2)
       sass (~> 3.2)
     builder (3.1.4)
+    callsite (0.0.11)
     cancan (1.6.10)
     capistrano (3.1.0)
       i18n
@@ -68,10 +56,11 @@ GEM
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       json (>= 1.7)
-    chunky_png (1.2.9)
-    ckeditor (4.0.9)
+    chunky_png (1.3.0)
+    ckeditor (4.0.8)
       mime-types
-      orm_adapter (~> 0.5.0)
+      orm_adapter
+    coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -87,6 +76,7 @@ GEM
     compass-rails (1.1.3)
       compass (>= 0.12.2)
     daemons (1.1.9)
+    debug_inspector (0.0.2)
     debugger (1.6.5)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.2.0)
@@ -127,7 +117,7 @@ GEM
     kaminari (0.15.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    kgio (2.8.1)
+    kgio (2.9.1)
     launchy (2.4.2)
       addressable (~> 2.3)
     letter_opener (1.2.0)
@@ -135,6 +125,10 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_request (0.2.8)
+      callsite
+      rack-contrib
+      railties
     mime-types (1.25.1)
     mini_magick (3.7.0)
       subexec (~> 0.2.1)
@@ -144,7 +138,7 @@ GEM
     nested_form (0.3.2)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (2.7.0)
+    net-ssh (2.8.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
@@ -154,6 +148,8 @@ GEM
     pg (0.17.1)
     polyglot (0.3.3)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-pjax (0.7.0)
       nokogiri (~> 1.5)
       rack (~> 1.3)
@@ -167,6 +163,20 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.2)
       sprockets-rails (~> 2.0.0)
+    rails_admin (0.6.1)
+      builder (~> 3.1)
+      coffee-rails (~> 4.0)
+      font-awesome-rails (>= 3.0)
+      haml (~> 4.0)
+      jquery-rails (~> 3.0)
+      jquery-ui-rails (~> 4.0)
+      kaminari (~> 0.14)
+      nested_form (~> 0.3)
+      rack-pjax (~> 0.7)
+      rails (~> 4.0)
+      remotipart (~> 1.0)
+      safe_yaml (~> 1.0)
+      sass-rails (~> 4.0)
     rails_admin_nestable (0.1.7)
       coffee-rails
       haml-rails
@@ -209,8 +219,8 @@ GEM
       term-ansicolor
     state_machine (1.2.0)
     subexec (0.2.3)
-    term-ansicolor (1.2.2)
-      tins (~> 0.8)
+    term-ansicolor (1.3.0)
+      tins (~> 1.0)
     thin (1.6.1)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -219,7 +229,7 @@ GEM
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
-    tins (0.13.1)
+    tins (1.0.0)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
@@ -229,7 +239,7 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    unicorn (4.8.1)
+    unicorn (4.8.2)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -242,11 +252,13 @@ PLATFORMS
 DEPENDENCIES
   ancestry
   bcrypt-ruby (~> 3.1.2)
+  better_errors
+  binding_of_caller
   bootstrap-sass (~> 3.1.0)
   cancan
   capistrano
   carrierwave
-  ckeditor
+  ckeditor (= 4.0.8)
   coffee-rails (~> 4.0.0)
   compass-rails
   debugger
@@ -257,11 +269,12 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   letter_opener
+  meta_request
   mini_magick
   paper_trail
   pg
   rails (= 4.0.2)
-  rails_admin!
+  rails_admin
   rails_admin_nestable
   russian
   sass-rails (~> 4.0.0)

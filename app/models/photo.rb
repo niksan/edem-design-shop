@@ -6,4 +6,8 @@ class Photo < ActiveRecord::Base
 
   default_scope -> { order('product_id, position, created_at') }
 
+  def id
+    super.to_s
+  end
+
 end
