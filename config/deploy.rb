@@ -1,4 +1,4 @@
-set :application,          'shop.edem-design'
+set :application,          'edem-design-shop'
 set :repo_url,             'git://github.com/niksan/edem-design-shop.git'
 set :scm,                  :git
 set :rails_env,            'production'
