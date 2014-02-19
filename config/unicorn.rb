@@ -1,4 +1,4 @@
-application = 'shop.edem-design'
+application = 'shop-edem-design'
 domain = 'shop.edem-design.ru'
 # Sample verbose configuration file for Unicorn (not Rack)
 #
