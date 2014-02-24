@@ -1,29 +1,23 @@
 %h1 Оформление заказа
 = error_messages(@order)
-= form_for :order, url: orders_path, method: :post, html: { id: 'new_order' } do |f|
-  .control-group
-    = f.label :first_name, t('.first_name'), class: 'control-label'
-    .controls
-      = f.text_field :first_name
-  .control-group
-    = f.label :last_name, t('.last_name'), class: 'control-label'
-    .controls
-      = f.text_field :last_name
-  .control-group
-    = f.label :phone, t('.phone'), class: 'control-label'
-    .controls
-      = f.text_field :phone
-  .control-group
-    = f.label :email, t('.email'), class: 'control-label'
-    .controls
-      = f.email_field :email
-  .control-group
-    = f.label :address, t('.address'), class: 'control-label'
-    .controls
-      = f.text_area :address
-  .control-group
-    = f.label :additional, t('.additional'), class: 'control-label'
-    .controls
-      = f.text_area :additional
-  .form-actions
+= form_for :order, url: orders_path, method: :post, html: { id: 'new_order', role: 'form' } do |f|
+  .form-group
+    = f.label :first_name, t('.first_name')
+    = f.text_field :first_name, class: 'form-control'
+  .form-group
+    = f.label :last_name, t('.last_name')
+    = f.text_field :last_name, class: 'form-control'
+  .form-group
+    = f.label :phone, t('.phone')
+    = f.text_field :phone, class: 'form-control'
+  .form-group
+    = f.label :email, t('.email')
+    = f.email_field :email, class: 'form-control'
+  .form-group
+    = f.label :address, t('.address')
+    = f.text_area :address, class: 'form-control'
+  .form-group
+    = f.label :additional, t('.additional')
+    = f.text_area :additional, class: 'form-control'
+  .form-group
     = f.submit t('order.create'), class: 'btn btn-primary btn-large'
