@@ -44,7 +44,7 @@ namespace :deploy do
   end
 
   task :pipeline_precompile do
-    run "cd #{fetch(:deploy_to)}/current; rvm use #{fetch(:rvm_ruby_string)}; RAILS_ENV=production rake assets:precompile"
+    execute "cd #{fetch(:deploy_to)}/current; rvm use #{fetch(:rvm_ruby_string)}; RAILS_ENV=production rake assets:precompile"
   end
   
   after :deploy, "deploy:pipeline_precompile"
