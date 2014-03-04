@@ -17,7 +17,7 @@ class OrdersController < ApplicationController
       gflash error: t('order.save.error')
       render :new
     end
-   end
+  end
 
    private
     
