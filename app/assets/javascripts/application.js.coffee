@@ -7,4 +7,3 @@
 jQuery ->
   $('a.fancybox').fancybox()
   $('.field_with_errors').parent().parent().addClass('error')
-#  $(".alert").alert()
