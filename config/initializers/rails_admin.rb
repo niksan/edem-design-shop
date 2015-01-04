@@ -75,6 +75,7 @@ RailsAdmin.config do |config|
     configure :category, :belongs_to_association
     configure :photos, :has_many_association
     configure :id, :integer 
+    configure :published, :boolean
     configure :name, :string 
     configure :description, :text 
     configure :price, :decimal 
@@ -88,6 +89,7 @@ RailsAdmin.config do |config|
       field :price
       field :category
       field :show_on_main_page
+      field :published
     end
     show do; end
     edit do
@@ -97,6 +99,7 @@ RailsAdmin.config do |config|
       field :price
       field :photos
       field :show_on_main_page
+      field :published
     end
     export do; end
   end

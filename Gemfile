@@ -45,4 +45,3 @@ gem 'capistrano'
 gem 'capistrano-rvm'
 gem 'capistrano-bundler'
 gem 'capistrano-rails'
-gem 'debugger', group: [:development, :test]

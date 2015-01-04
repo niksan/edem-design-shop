@@ -12,6 +12,7 @@ class Product < ActiveRecord::Base
   accepts_nested_attributes_for :photos, allow_destroy: true
 
   default_scope -> { where(disabled: false).order('category_id, price, name') }
+  scope :published, -> { where(published: true) }
   scope :main_page, -> { where(show_on_main_page: true) }
 
   def main_photo
