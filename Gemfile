@@ -21,7 +21,7 @@ gem 'mini_magick'
 gem 'gritter', '1.1.0'
 gem 'rails_admin'
 gem 'rails_admin_nestable'
-gem 'ckeditor'
+gem 'ckeditor', '~> 4.1.1'
 gem 'paper_trail'
 gem 'russian'
 gem 'eventmachine', github: "eventmachine/eventmachine"
