@@ -24,6 +24,7 @@ gem 'rails_admin_nestable'
 gem 'ckeditor', '4.0.8'
 gem 'paper_trail'
 gem 'russian'
+gem 'eventmachine', github: "eventmachine/eventmachine"
 
 group :doc do
   gem 'sdoc', require: false
@@ -35,13 +36,9 @@ group :development do
   gem 'meta_request'
   gem 'letter_opener'
   gem 'thin'
+  gem "capistrano", '~> 2.15.5'
 end
 
 group :production do
   gem 'unicorn'
 end
-
-gem 'capistrano'
-gem 'capistrano-rvm'
-gem 'capistrano-bundler'
-gem 'capistrano-rails'
