@@ -13,7 +13,8 @@ class OrdersController < ApplicationController
       end
       gflash success: t('order.save.success')
       redirect_to root_path
-    rescue
+    rescue Exception => e
+      Rails.logger.error e.to_s
       gflash error: t('order.save.error')
       render :new
     end
