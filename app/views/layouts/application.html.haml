@@ -19,10 +19,8 @@
             = render partial: 'shared/cart_content', locals: { cart: @cart }
         #contacts
           %span.phone
-            +7(473)2-32-36-52
-            %br
             +7(473)2-92-00-76
-          г. Воронеж, ул. Хользунова, 4, оф. 1, этаж 4
+          г. Воронеж, ул.Владимира Невского, 25 д
         #main_menu= render 'shared/main_menu'
       %object{ data: asset_path('header.swf'), height: '216', id: 'header_flash', type: 'application/x-shockwave-flash', width: '1200' }
         %param{ name: 'movie', value: asset_path('header.swf') }
@@ -38,6 +36,6 @@
         .clear
         #footer
           .contacts
-            %span.phone +7(473)292-00-76
-            %span.address г. Воронеж, ул. Хользунова, 4, оф. 1, этаж 4
+            %span.phone +7(473)2-92-00-76
+            %span.address г. Воронеж, ул.Владимира Невского, 25 д
             = link_to raw('схема проезда &rarr;'), 'http://edem-design.ru/articles/21-kontakty#second_menu'

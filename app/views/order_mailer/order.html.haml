@@ -1,0 +1,9 @@
+%h1 Заказ
+%ul
+  - @contacts.each do |contact|
+    %li= contact.join(': ')
+%hr
+%p
+  %ul
+    - @cart.each do |item|
+      %li= item

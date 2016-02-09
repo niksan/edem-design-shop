@@ -37,7 +37,7 @@ class OrdersController < ApplicationController
     def get_order_datas(params)
       datas = {}
       params.each do |k, v|
-        datas[t(".orders.new.#{k}")] = v
+        datas[t("orders.new.#{k}")] = v
       end
       datas
     end
