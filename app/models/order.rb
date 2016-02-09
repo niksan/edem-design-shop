@@ -1,6 +1,6 @@
 class Order < ActiveRecord::Base
   attr_reader :name
-  validates :first_name, :last_name, :phone, :address, presence: true
+  validates :first_name, :last_name, :phone, presence: true
 
   has_many :items, dependent: :destroy
 
