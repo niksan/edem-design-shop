@@ -1,5 +1,5 @@
 class OrderMailer < ActionMailer::Base
-  default from: "shop@edem-design.ru"
+  default from: "Интернет магазин Эдем <shop@edem-design.ru>"
 
   def order(contacts, cart)
     @contacts = contacts
