@@ -79,5 +79,6 @@ EdemDesignShop::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.delivery_method = :sendmail 
+  config.action_mailer.sendmail_settings = { arguments: "-i" }
 
 end
