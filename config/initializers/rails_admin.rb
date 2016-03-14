@@ -19,7 +19,7 @@ RailsAdmin.config do |config|
   config.current_user_method { current_user } # auto-generated
   config.audit_with :history, 'User'
 
-  config.excluded_models = ['Order::Item', 'Role', 'Ckeditor::Asset', 'Ckeditor::AttachmentFile', 'Ckeditor::Picture']
+  config.excluded_models = ['Order::Item', 'Role']
 
   [:email, :title].each do |method|
     config.label_methods << method
