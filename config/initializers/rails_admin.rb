@@ -20,6 +20,7 @@ RailsAdmin.config do |config|
   config.audit_with :history, 'User'
 
   config.excluded_models = ['Order::Item', 'Role']
+  #config.excluded_models = ['Order::Item', 'Role', 'Ckeditor::Asset', 'Ckeditor::AttachmentFile', 'Ckeditor::Picture']
 
   [:email, :title].each do |method|
     config.label_methods << method
